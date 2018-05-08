@@ -1,0 +1,72 @@
+.header {
+  background: #75d661;
+  padding-top: 60px;
+}
+
+.header-content, .body-content {
+  max-width: 570px;
+  margin: 0 auto;
+  box-shadow: 0 -5px 40px 7px rgba(0, 0, 0, 0.08);
+}
+
+.info {
+  color: #fff;
+  padding-top: 25px;
+}
+
+.info .img {
+  height: 95px;
+  width: 95px;
+  border-radius: 50%;
+  background-position: center center !important;
+  background-size: cover !important;
+  margin: 10px auto 0 auto;
+  background: url('../img/cubo.png');
+}
+
+.action-wrapper {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border-right: solid 1px rgba(255, 255, 255, 0.15)
+}
+
+.actions a {
+  color: #fff;
+  display: block;
+}
+
+.actions a:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+  color: #fff;
+  text-decoration: none;
+}
+
+.body {
+  background: #fff;
+}
+
+.body-content .details {
+  padding: 20px 45px 40px;
+}
+
+.card-row {
+  position: relative;
+  padding: 20px 0 20px 65px;
+  /*float: left;*/
+  width: 100%;
+}
+
+.card-row i {
+  position: absolute;
+  top: 25px;
+  left: 20px;
+  font-size: 20px;
+  color: #b3b4bb;
+}
+
+.separator {
+  height: 1px;
+  background-color: #eaeaea;
+  float: right;
+  width: calc(100% - 65px);
+}

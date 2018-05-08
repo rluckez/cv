@@ -1,0 +1,424 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <link rel="stylesheet" type="text/css" href="css/teste.css">
+  <title>Contact Page</title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+
+  <!--Facebook meta-->
+  <meta property="og:url" content="http://l.ead.me/vCPlus?trackSharing=1">
+  <meta property="og:title" content="Emily Bates">
+  <meta property="og:description" content="Seeking for freelance work with over 10 years of graphic design experience. Feel free to get in touch!">
+  <meta property="og:image" content="http://qrcgcustomers.s3-eu-west-1.amazonaws.com/account2/11_20.jpg">
+  <meta property="og:image:width" content="200">
+  <meta property="og:image:height" content="200">
+
+  <!-- Twitter Card data -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:url" content="http://l.ead.me/vCPlus?trackSharing=1">
+  <meta name="twitter:title" content="Emily Bates">
+  <meta name="twitter:description" content="Seeking for freelance work with over 10 years of graphic design experience. Feel free to get in touch!">
+  <meta name="twitter:image" content="http://qrcgcustomers.s3-eu-west-1.amazonaws.com/account2/11_20.jpg">
+  <meta name="twitter:image:width" content="200">
+  <meta name="twitter:image:height" content="200">
+
+  <!-- Schema.org markup for Google+ -->
+  <meta itemprop="name" content="Emily Bates">
+  <meta itemprop="description" content="Seeking for freelance work with over 10 years of graphic design experience. Feel free to get in touch!">
+  <meta itemprop="image" content="http://qrcgcustomers.s3-eu-west-1.amazonaws.com/account2/11_20.jpg">
+</head>
+<body id="dvcard-body" class="whiteTheme">
+
+<!--<div class="loading-welcome active welcome-screen">-->
+  <!--<div class="progress">-->
+    <!--<div class="loading-bar indeterminate" style="background-color: rgb(117, 214, 97);"></div>-->
+  <!--</div>-->
+  <!--<div class="helper"></div>-->
+  <!--&lt;!&ndash;<img id="welcomeImg" imageonload="" src="//s3.eu-central-1.amazonaws.com/qrcgappcdn/vcard-plus-solution/welcome.png" style="display: inline;">&ndash;&gt;-->
+<!--</div>-->
+<div class="vcard-template style2" id="rootElement">
+  <div class="bgd-shadow"></div>
+  <div class="page-home page">
+    <div class="vcard-header gradient-red-orange-bg" style="background: rgb(117, 214, 97);">
+      <div class="vcard-header-wrapper">
+        <div class="vcard-top-info">
+          <h4 class="top"></h4>
+
+          <div class="img &amp;&amp; view.avatar"></div>
+          <div class="img"></div>
+          <h2 class="name dynamicTextColor">Emily
+            Bates</h2>
+
+          <h2 class="name dynamicTextColor">Emily Bates Agency</h2>
+          <h6 class="title dynamicTextColor">Designer</h6>
+        </div>
+        <div class="vcard-functions">
+          <div class="vcard-functions-wrapper">
+            <a class="header-button ng-hide" ng-show="loadDemo &amp;&amp; (view.numbers_mobile || view.numbers_phone)"
+               ng-click="!loadDemo ?  '' : callAction($event,'headerButton-call')" ng-style="{'transition': loadDemo ? 'none' : 'all 0.15s ease'}"
+               style="transition: all 0.15s ease;">
+              <i class="icon-phone dynamicTextColor"></i>
+              <small class="dynamicTextColor">Call</small>
+            </a>
+
+            <a class="header-button ng-hide" ng-show="loadDemo &amp;&amp; (view.email)" ng-click="!loadDemo ?  '' : callAction($event,'headerButton-email')"
+               ng-style="{'transition': loadDemo ? 'none' : 'all 0.15s ease'}" style="transition: all 0.15s ease;">
+              <i class="icon-send dynamicTextColor"></i>
+              <small class="dynamicTextColor">Email</small>
+            </a>
+
+            <a href="tel:+1-555-555-1234" ng-show="!loadDemo &amp;&amp; (view.numbers_mobile || view.numbers_phone)">
+              <i class="icon-phone dynamicTextColor"></i>
+              <small class="dynamicTextColor">Call</small>
+            </a>
+
+            <a href="mailto:hello@emilybates.com?subject=From my vCard&amp;body=" target="_newEmail" ng-show="!loadDemo &amp;&amp; (view.email)">
+              <i class="icon-send dynamicTextColor"></i>
+              <small class="dynamicTextColor">Email</small>
+            </a>
+
+            <a ng-show="((view.street || view.city )&amp;&amp; view.show_directions)" ng-click="callAction($event, 'mapAction')" class="last-element">
+              <i class=" icon-map-pin dynamicTextColor"></i>
+              <small class="dynamicTextColor">Directions</small>
+            </a>
+
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="vcard-body-wrapper">
+      <div class="vcard-body">
+        <div>
+          <div class="vcard-row">
+            <h4>Waiting for you to enter data</h4>
+          </div>
+          <div class="sk-three-bounce">
+            <div class="sk-child sk-bounce1"></div>
+            <div class="sk-child sk-bounce2"></div>
+            <div class="sk-child sk-bounce3"></div>
+          </div>
+
+        </div>
+        <div id="dvcard-details">
+          <div class="vcard-row ng-hide" ng-show="view.birthday">
+            <i class="icon icon-birthday"></i>
+            <h4 class="ng-binding"></h4>
+            <small>Birthday</small>
+          </div>
+          <div class="vcard-row" ng-show="view.bio">
+            <h4 ng-bind-html="view.bio|nl2br" class="ng-binding">Seeking for freelance work with over 10 years of graphic design experience. Feel free to get in
+              touch!</h4>
+          </div>
+          <div class="vcard-separator" ng-show="view.bio"></div>
+          <div class="vcard-row" ng-show="view.numbers_mobile">
+            <i class="icon icon-phone"></i>
+            <h4><a href="tel:+1-555-555-1234" class="ng-binding">+1-555-555-1234</a></h4>
+            <small>Mobile</small>
+          </div>
+          <div class="vcard-row pt0 ng-hide" ng-show="view.numbers_phone">
+            <i ng-show="view.numbers_phone &amp;&amp; !view.numbers_mobile" class="icon icon-phone ng-hide"></i>
+            <h4><a href="tel:" class="ng-binding"></a></h4>
+            <small>Telephone</small>
+          </div>
+          <div class="vcard-row pt0 ng-hide" ng-show="view.numbers_fax">
+
+            <h4 class="ng-binding"></h4>
+            <small>Fax</small>
+          </div>
+          <div class="vcard-separator"></div>
+          <div class="vcard-row" ng-show="view.email">
+            <i class="icon icon-mail"></i>
+            <h4><a href="mailto:hello@emilybates.com" target="_newLink" class="ng-binding">hello@emilybates.com</a></h4>
+            <small>Email</small>
+          </div>
+          <div class="vcard-separator" ng-show="view.street || view.zip || view.city || view.country || view.company "></div>
+          <div class="vcard-row" ng-show="view.company">
+            <i class="icon icon-work"></i>
+            <h4 class="ng-binding">Emily Bates Agency</h4>
+            <small ng-show="view.job" class="ng-binding">Designer</small>
+          </div>
+          <div class="vcard-separator" ng-show="view.venue || view.city || view.state || view.zip || view.street || view.country"></div>
+          <div class="vcard-row" ng-show="view.venue || view.city || view.state || view.zip || view.street || view.country">
+            <label></label>
+            <i class="icon icon-event-location"></i>
+            <h4 class="ng-binding"></h4>
+            <h4 class="ng-binding">1000 Marketplace Ave. </h4>
+            <h4 class="ng-binding">New York<span ng-show="view.state || view.zip" class="ng-binding"><span ng-show="view.city">,</span>  NY 10001</span>
+            </h4>
+            <h4 class="ng-binding">United States</h4>
+
+            <!-- ngIf: view.show_directions -->
+            <div class="floated-container ng-scope" ng-if="view.show_directions"
+                 ng-show="(view.street &amp;&amp; view.city) || (view.city &amp;&amp; view.country) || view.city || view.country">
+              <a class="event-slim-button ripplelink left_15 mt-10" ng-style="{'color': isColorLight(view.color2) ? 'black' : view.color2}"
+                 ng-click="callAction($event, 'mapAction')" style="color: rgb(232, 87, 119);">
+                Show on map </a>
+            </div><!-- end ngIf: view.show_directions -->
+          </div>
+          <div class="vcard-separator" ng-show="view.venue || view.city || view.state || view.zip || view.street || view.country"></div>
+
+          <div class="vcard-row" ng-show="view.website">
+            <i class="icon icon-earth"></i>
+            <h4><a href="http://www.emilybates.com" target="_newLink" class="ng-binding">www.emilybates.com</a></h4>
+            <small>Website</small>
+          </div>
+          <div class="vcard-separator"
+               ng-show="view.bio || view.numbers_mobile || view.numbers_phone || view.email || view.street || view.zip || view.city || view.country || view.company "></div>
+          <div id="socialmedialinksContainer">
+            <div class="vcard-social" style="margin-bottom:20px;">
+              <!--        <h5>--><!--</h5>-->
+              <!--        <a href="{{value|prefixURL}}" ng-repeat="(key, value) in view.socialmedialinks"><span-->
+              <!--                    class="icon icon-wrapper {{key}}" target="_top"><i class="icon icon icon-{{key}}"></i></span></a>-->
+              <div class="socialMedia-container" ng-show="view.code.channels.length > 0">
+                <label>Social Media</label>
+                <i class="icon-social-media"></i>
+                <div class="channels-padding mt-0">
+                  <!-- ngRepeat: channel in view.code.channels track by $index --><a href="http://www.instagram.com/vCardPlus" target="_blank"
+                                                                                     class="channel-container ng-scope" id="channel-item-Instagram"
+                                                                                     ng-click="loadDemo ? callAction($event,'channelAction') : ''"
+                                                                                     ng-repeat="channel in view.code.channels track by $index">
+                  <div class="table-cell-middle pl-55 pos-relative">
+                    <div class="channel-bgd-instagram">
+                      <!-- ngIf: channel.name != 'Snapchat' --><i ng-if="channel.name != 'Snapchat'" class="icon-social-instagram"></i>
+                      <!-- end ngIf: channel.name != 'Snapchat' -->
+                      <!-- ngIf: channel.name == 'Snapchat' -->
+                    </div>
+                  </div>
+                </a><!-- end ngRepeat: channel in view.code.channels track by $index --><a href="http://vCardPlus" target="_blank" class="channel-container ng-scope"
+                                                                                           id="channel-item-Dribbble"
+                                                                                           ng-click="loadDemo ? callAction($event,'channelAction') : ''"
+                                                                                           ng-repeat="channel in view.code.channels track by $index">
+                  <div class="table-cell-middle pl-55 pos-relative">
+                    <div class="channel-bgd-dribbble">
+                      <!-- ngIf: channel.name != 'Snapchat' --><i ng-if="channel.name != 'Snapchat'" class="icon-social-dribbble"></i>
+                      <!-- end ngIf: channel.name != 'Snapchat' -->
+                      <!-- ngIf: channel.name == 'Snapchat' -->
+                    </div>
+                  </div>
+                </a><!-- end ngRepeat: channel in view.code.channels track by $index --><a href="http://vCardPlus" target="_blank" class="channel-container ng-scope"
+                                                                                           id="channel-item-Facebook"
+                                                                                           ng-click="loadDemo ? callAction($event,'channelAction') : ''"
+                                                                                           ng-repeat="channel in view.code.channels track by $index">
+                  <div class="table-cell-middle pl-55 pos-relative">
+                    <div class="channel-bgd-facebook">
+                      <!-- ngIf: channel.name != 'Snapchat' --><i ng-if="channel.name != 'Snapchat'" class="icon-social-facebook"></i>
+                      <!-- end ngIf: channel.name != 'Snapchat' -->
+                      <!-- ngIf: channel.name == 'Snapchat' -->
+                    </div>
+                  </div>
+                </a><!-- end ngRepeat: channel in view.code.channels track by $index --><a href="http://vCardPlus" target="_blank" class="channel-container ng-scope"
+                                                                                           id="channel-item-Vimeo"
+                                                                                           ng-click="loadDemo ? callAction($event,'channelAction') : ''"
+                                                                                           ng-repeat="channel in view.code.channels track by $index">
+                  <div class="table-cell-middle pl-55 pos-relative">
+                    <div class="channel-bgd-vimeo">
+                      <!-- ngIf: channel.name != 'Snapchat' --><i ng-if="channel.name != 'Snapchat'" class="icon-social-vimeo"></i>
+                      <!-- end ngIf: channel.name != 'Snapchat' -->
+                      <!-- ngIf: channel.name == 'Snapchat' -->
+                    </div>
+                  </div>
+                </a><!-- end ngRepeat: channel in view.code.channels track by $index --><a href="http://vCardPlus" target="_blank" class="channel-container ng-scope"
+                                                                                           id="channel-item-LinkedIn"
+                                                                                           ng-click="loadDemo ? callAction($event,'channelAction') : ''"
+                                                                                           ng-repeat="channel in view.code.channels track by $index">
+                  <div class="table-cell-middle pl-55 pos-relative">
+                    <div class="channel-bgd-linkedin">
+                      <!-- ngIf: channel.name != 'Snapchat' --><i ng-if="channel.name != 'Snapchat'" class="icon-social-linkedin"></i>
+                      <!-- end ngIf: channel.name != 'Snapchat' -->
+                      <!-- ngIf: channel.name == 'Snapchat' -->
+                    </div>
+                  </div>
+                </a><!-- end ngRepeat: channel in view.code.channels track by $index -->
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="vcard-row follow-scroll contactData-container " ng-style="setPosition('contactData')">
+            <div class="fabs" id="saveContact">
+              <div class="fixed-blur-bgd">
+                <div class="chat">
+                  <div class="fab-body fab-step1">
+                    <div class="iconFab icon-fab-close"></div>
+                    <div class="fab-header" ng-style="{color: isColorLight(view.color2) ? 'black' : view.color2}" style="color: rgb(232, 87, 119);">
+                      Save Contact Data
+                    </div>
+                    <div class="fab-header text-regular">How would you like to save contact data?</div>
+                    <ul>
+                      <li open-popup="email" class="addContactAction" ng-click="!loadDemo ? toggleFabStep(1,2) : callAction($event, 'addContactAction')">
+                        <i class="iconFab icon-fab-share-email"></i>
+                        <a href="">
+                          Send by Email </a>
+                      </li>
+                      <li ng-click="loadDemo ? callAction($event, 'addContactAction') : ''" class="addContactAction">
+                        <i class="iconFab icon-fab-share-savecontact"></i>
+                        <!-- ngIf: !loadDemo --><a ng-if="!loadDemo" href="http://l.ead.me/handlePost/vCPlus/?download=true" rel="external" class="ng-scope">
+                        Save to My Phone </a><!-- end ngIf: !loadDemo -->
+                        <!-- ngIf: loadDemo -->
+                      </li>
+                    </ul>
+
+                  </div>
+                  <div class="fab-body fab-step2" style="display:none;">
+                    <div class="iconFab icon-fab-close"></div>
+                    <div class="icon-event-back" ng-click="toggleFabStep(2,1)"></div>
+                    <div class="fab-header mt-10" ng-style="{color: isColorLight(view.color2) ? 'black' : view.color2}" style="color: rgb(232, 87, 119);">
+                      <span class="emailText1">Send by Email</span>
+                      <span class="emailText2">Email was send</span>
+                    </div>
+                    <div class="fab-header text-regular">
+                      <span class="emailText1">Send contact details using email.</span>
+                      <span class="emailText2">Please have a look to you inbox, the email will arrive shortly.</span>
+                    </div>
+                    <form action="#" method="post" class="ng-pristine ng-valid ng-valid-email">
+                      <input class="fab-email-input ng-pristine ng-untouched ng-valid ng-valid-email" type="email" id="email" ng-model="email"
+                             placeholder="Enter Email Address">
+                      <input type="hidden" id="YII_CSRF_TOKEN" name="YII_CSRF_TOKEN" value="db15c94379a3abc72a859e800cd1bdf7861fc48e">
+                      <div class="btn green block" ng-click="sendByEmail(email);" style="float: left;margin-top: 20px;">
+                        Send
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+              <a id="prime" class="fab" ng-style="{background:view.color2||'#607d8b'}" style="background: rgb(232, 87, 119);">
+        <span class="hidden-xs" ng-style="{'color': isColorLight(view.color2) ? 'black' : 'white'}" style="color: white;">
+            <i class="prime iconFab icon-fab-share-add" ng-style="{'color': isColorLight(view.color2) ? 'black' : 'white'}" style="color: white;"></i>
+            Download vCard        </span>
+                <i class="prime iconFab icon-fab-share-add visible-xs" ng-style="{'color': isColorLight(view.color2) ? 'black' : 'white'}" style="color: white;"></i>
+              </a>
+            </div>
+          </div>
+          <div class="vcard-row follow-scroll share-container" ng-style="setPosition('share')">
+            <div class="fabs" id="shareFab">
+              <div class="fixed-blur-bgd">
+                <div class="chat">
+                  <div class="fab-body">
+                    <div class="iconFab icon-fab-close"></div>
+                    <div class="fab-header" ng-style="{'color': isColorLight(view.color2) ? 'black' : view.color2}" style="color: rgb(232, 87, 119);">Share</div>
+                    <ul class="ssk-block ssk-md" data-url="http://l.ead.me/vCPlus?trackSharing=1" data-text="">
+                      <li>
+                        <i class="iconFab icon-fab-share-facebook"></i>
+                        <a href="" class="ssk ssk-text ssk-facebook">Facebook</a>
+                      </li>
+                      <li>
+                        <i class="iconFab icon-fab-share-twitter"></i>
+                        <a href="" class="ssk ssk-text ssk-twitter">Twitter</a>
+                      </li>
+                      <li>
+                        <i class="iconFab icon-fab-share-googleplus"></i>
+                        <a href="" class="ssk ssk-text ssk-google-plus">Google+</a>
+                      </li>
+                      <li>
+                        <i class="iconFab icon-fab-share-whatsapp"></i>
+                        <a href="whatsapp://send?text=http://l.ead.me/vCPlus?trackSharing=1" class="ssk ssk-whatsapp">Whatsapp</a>
+                      </li>
+                      <li>
+                        <i class="iconFab icon-fab-share-email"></i>
+                        <a href="mailto:?body=http://l.ead.me/vCPlus?trackSharing=1" target="_blank">Email</a>
+                      </li>
+                      <li>
+                        <i class="iconFab icon-fab-share-message"></i>
+                        <input id="shortUrl" value="http://l.ead.me/vCPlus" readonly="">
+                        <button id="copyButton">Copy</button>
+                        <div class="ifCopySucceed ng-hide" ng-show="ifCopySucceed">
+                          Text copied to the clipboard.
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <!-- ngIf: view.sharing -->
+            </div>
+          </div>
+
+          <div id="gotIt">
+            <div class="fixed-blur-bgd">
+              <div class="dialog-container">
+                <div class="fab-body">
+                  <div class="event-gotIt-button">
+                  </div>
+                  <div class="dialog-body pull-left ng-binding">
+
+                  </div>
+                  <a class="text-regular-blue mt-20" ng-click="closeGotItDialog()">
+                    Got it </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <div class="page-maps page hidden">
+    <div class="devent-map-header">
+      <div class="event-section-title " ng-style="getBackgroundColor();" style="background: rgb(117, 214, 97);">
+        <div class="event-content-container">
+          <i class="icon-event-back dynamicTextColor" ng-click="switchPages('page-maps','page-home', false)"></i>
+          <div class="event-title dynamicTextColor">Location</div>
+        </div>
+      </div>
+    </div>
+    <div class="event-body">
+      <div class="vcard-body-wrapper">
+        <div class="vcard-body">
+          <div id="dvcard-maps">
+            <div>
+              <img>
+              <div ng-show="resetMap &amp;&amp; (view.venue || view.city || view.state || view.zip)" ng-click="resetMap=false; setMapUrl()" class="reset-map ng-hide">
+                Reset map
+              </div>
+            </div>
+            <div class="vcard-row" ng-show="view.venue || view.city || view.state || view.zip">
+              <label>Where</label>
+              <i class="icon icon-event-location"></i>
+              <!--<h4>{{view.venue}}</h4>-->
+              <h4 class="ng-binding">1000 Marketplace Ave. </h4>
+              <h4 class="ng-binding">New York<span ng-show="view.state || view.zip" class="ng-binding"><span ng-show="view.city">,</span>  NY 10001</span>
+              </h4>
+              <h4 class="ng-binding">United States</h4>
+              <input id="addressValue" type="hidden" ng-value="view.street + ','  + view.city + ',' + view.country " value="1000 Marketplace Ave.,New York,United States">
+              <div class="floated-container">
+                <a class="event-slim-button ripplelink left_20 mt-10" ng-style="{'color': isColorLight(view.color2) ? 'black' : view.color2}"
+                   ng-click="callAction($event, 'redirectToMap')" style="color: rgb(232, 87, 119);">
+                  Show directions </a>
+              </div>
+            </div>
+          </div>
+          <div id="redirectToMaps">
+            <div class="fixed-blur-bgd">
+              <div class="dialog-container">
+                <div class="fab-body">
+                  <div class="event-title">
+                    Use Google Maps
+                  </div>
+                  <div class="dialog-body">
+                    Directions will open in Google Maps. Do you want to continue?
+                  </div>
+                  <a class="event-slim-button ripplelink mt-10 pull-right" ng-style="{'color': isColorLight(view.color2) ? 'black' : view.color2}"
+                     ng-click="dialogRedirectCallback(false)" style="color: rgb(232, 87, 119);">
+                    No </a>
+                  <a class="event-slim-button ripplelink mt-10 pull-right" ng-style="{'color': isColorLight(view.color2) ? 'black' : view.color2}"
+                     ng-click="dialogRedirectCallback(true, 'https://maps.google.com/maps?daddr='+getMapAddress())" style="color: rgb(232, 87, 119);">
+                    Yes </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--    --></div>
+
+</body>
+</html>
